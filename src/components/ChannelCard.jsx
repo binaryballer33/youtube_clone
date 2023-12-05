@@ -4,9 +4,9 @@ import { CardContent, CardMedia, Typography, Box } from '@mui/material'
 import { CheckCircle } from '@mui/icons-material'
 import { demoProfilePicture } from '../utils/constants'
 
-const ChannelCard = ({ channelDetail }) => {
+const ChannelCard = ({ channelDetail, marginTop }) => {
   return (
-    <Box sx={{ boxShadow: 'none', borderRadius: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: { xs: '356px', md: '320px' }, height: '326px', m: 'auto'}}>
+    <Box sx={{ marginTop: marginTop, boxShadow: 'none', borderRadius: '20px', display: 'flex', justifyContent: 'center', alignItems: 'center', width: { xs: '356px', md: '320px' }, height: '326px', ml: 'auto', mr: 'auto'}}>
       <Link to={`/channel/${channelDetail?.id?.channelId}`}>
         <CardContent sx={{ display: 'inline-block', flexDirection: 'coloum', justifyContent: 'center', textAlign: 'center', color: '#fff' }}>
           <CardMedia 
