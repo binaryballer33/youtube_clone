@@ -16,9 +16,6 @@ const Navbar = () => {
         <Link to="/" style={{ display: 'flex', alignItems: 'center' }}>
             <img src={logo} alt="logo" height={45} />
         </Link>
-        <Link to="/feed">Feed</Link>
-        <Link to="/search">Search</Link>
-
         <SearchBar />
     </Stack>
   )

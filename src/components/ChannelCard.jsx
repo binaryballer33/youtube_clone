@@ -22,7 +22,6 @@ const ChannelCard = ({ channelDetail, marginTop }) => {
             <Typography variant="subtitle2" color="gray">{parseInt(channelDetail?.statistics?.subscriberCount).toLocaleString()} Subscribers</Typography>
             )
           }
-          
         </CardContent>
       </Link>
     </Box>
